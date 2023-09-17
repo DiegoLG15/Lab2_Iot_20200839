@@ -1,11 +1,11 @@
 package com.example.lab2_iot_20200839;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PlayApp extends AppCompatActivity {
 
@@ -14,6 +14,7 @@ public class PlayApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_app);
         Toast.makeText(this, "Estás en la vista de PlayApp", Toast.LENGTH_SHORT).show();
+
     }
 
     public void cronometro(View view){
@@ -24,5 +25,8 @@ public class PlayApp extends AppCompatActivity {
         Intent intent=new Intent(this, PlayContador.class);
         startActivity(intent);
     }
+
+
+
 
 }

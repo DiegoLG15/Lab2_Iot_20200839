@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.302" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/textInputNombre"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
@@ -80,7 +80,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout6"
+        android:id="@+id/textInputCorreo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
@@ -90,7 +90,7 @@
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5
 "
@@ -105,7 +105,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
+        android:id="@+id/textInputApellido"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
@@ -115,11 +115,11 @@
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout6"
+        app:layout_constraintBottom_toTopOf="@+id/textInputCorreo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNombre"
         app:layout_constraintVertical_bias="0.423">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -131,7 +131,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editTextPassword"
         android:layout_width="300dp"
         android:layout_height="57dp"
         android:layout_marginBottom="16dp"
