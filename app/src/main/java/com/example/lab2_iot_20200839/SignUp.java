@@ -33,7 +33,7 @@ public class SignUp extends AppCompatActivity {
     private String nombre;
     private String apellido;
 
-    private String thumbnail;
+    private String imagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +65,7 @@ public class SignUp extends AppCompatActivity {
         Intent intent=new Intent(this, PlayApp.class);
         intent.putExtra("nombre",nombre) ;
         intent.putExtra("apellido",apellido);
-        intent.putExtra("thumbnail",thumbnail);
+        intent.putExtra("imagen",imagen);
         intent.putExtra("username",username);
         startActivity(intent);
     }
@@ -83,7 +83,7 @@ public class SignUp extends AppCompatActivity {
                             nombre = firstResult.getName().getFirst();
                             apellido = firstResult.getName().getLast();
                             username= firstResult.getLogin().getUsername();
-                            thumbnail = firstResult.getPicture().getLarge();
+                            imagen = firstResult.getPicture().getLarge();
 
                             binding.textInputNombre.getEditText().setText(nombre);
                             binding.textInputApellido.getEditText().setText(apellido);

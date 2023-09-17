@@ -23,31 +23,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tiempoCronometro"
+    <Chronometer
+        android:id="@+id/cronometro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="176dp"
         android:layout_marginEnd="177dp"
-        android:text="0:00:00"
         android:textColor="#000000"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/empezarCronometro"
+        app:layout_constraintBottom_toTopOf="@+id/iniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.538" />
 
     <Button
-        android:id="@+id/empezarCronometro"
+        android:id="@+id/iniciar"
         android:layout_width="246dp"
         android:layout_height="54dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="82dp"
         android:backgroundTint="#390505"
         android:text="INICIAR"
-        android:onClick="iniciarCronometro"
-        app:layout_constraintBottom_toTopOf="@+id/pausarCronometro"
+        android:onClick="iniciar"
+        app:layout_constraintBottom_toTopOf="@+id/pausar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,15 +55,15 @@
         />
 
     <Button
-        android:id="@+id/pausarCronometro"
+        android:id="@+id/pausar"
         android:layout_width="246dp"
         android:layout_height="54dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="82dp"
         android:backgroundTint="#390505"
         android:text="PAUSAR"
-        android:onClick="pausarCronometro"
-        app:layout_constraintBottom_toTopOf="@+id/despausarCron"
+        android:onClick="pausar"
+        app:layout_constraintBottom_toTopOf="@+id/despausar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,15 +71,15 @@
         app:layout_constraintVertical_bias="0.94" />
 
     <Button
-        android:id="@+id/despausarCron"
+        android:id="@+id/despausar"
         android:layout_width="246dp"
         android:layout_height="54dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="82dp"
         android:backgroundTint="#390505"
         android:text="DESPAUSAR"
-        android:onClick="despausarCronometro"
-        app:layout_constraintBottom_toTopOf="@+id/limpiarCron"
+        android:onClick="despausar"
+        app:layout_constraintBottom_toTopOf="@+id/limpiar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,14 +87,14 @@
         app:layout_constraintVertical_bias="0.817" />
 
     <Button
-        android:id="@+id/limpiarCron"
+        android:id="@+id/limpiar"
         android:layout_width="246dp"
         android:layout_height="54dp"
         android:layout_marginStart="83dp"
         android:layout_marginEnd="82dp"
         android:backgroundTint="#000000"
         android:text="LIMPIAR"
-        android:onClick="limpiaCronometro"
+        android:onClick="limpiar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
